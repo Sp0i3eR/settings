@@ -35,9 +35,12 @@ vmap <F2> <esc>:w<cr>i
 vmap <S-F2> <esc>:W<cr>i
 imap <F2> <esc>:w<cr>i
 imap <S-F2> <esc>:W<cr>i
-nmap <F10> :q!<cr>
-vmap <F10> <esc>:q!<cr>i
-imap <F10> <esc>:q!<cr>i
+nmap <c-q> :confirm q<cr>
+vmap <c-q> <esc>:confirm q<cr>i
+imap <c-q> <esc>:confirm q<cr>i
+nmap <F10> :confirm q<cr>
+vmap <F10> <esc>:confirm q<cr>i
+imap <F10> <esc>:confirm q<cr>i
 map <c-z> <c-o>u
 
 nmap <silent> <C-t> :tabnew<CR>
