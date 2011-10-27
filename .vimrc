@@ -19,6 +19,7 @@ set complete-=i
 set softtabstop=4
 set expandtab
 set shiftwidth=4
+set t_Co=256
 
 
 vmap <c-f> !xmllint --format -<CR>
@@ -55,6 +56,7 @@ nmap <c-up> <c-w>W
 nmap <c-left> <c-w>h
 nmap <c-right> <c-w>l
 
-colors desert
+colorscheme solarized
+set background=dark
 set number
 
