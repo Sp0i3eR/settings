@@ -2,7 +2,20 @@ call pathogen#runtime_append_all_bundles()
 
 set autoindent
 set fileencodings=utf-8,cp1251,default
-set guifont=Terminus\ 14
+if has("win32")
+    try
+        set guifont=Terminus:h14:cCYRILLIC
+    catch
+        set guifont=Courier_New:h11:cCYRILLIC
+    endtry
+else
+    try
+        set guifont=Terminus\ 14
+    catch
+        set guifont=Monospace\ 14
+    endtry
+endif
+
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
@@ -56,8 +69,13 @@ nmap <c-up> <c-w>W
 nmap <c-left> <c-w>h
 nmap <c-right> <c-w>l
 
-colorscheme solarized
-set background=dark
+try
+    colorscheme solarized
+    set background=dark
+catch
+    colorscheme desert
+endtry
+
 set number
 set clipboard=unnamed
 
