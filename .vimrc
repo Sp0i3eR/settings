@@ -77,7 +77,13 @@ catch
 endtry
 
 set number
-set clipboard=unnamed
+if has('win32')
+    set clipboard=unnamed
+    nmap yp :let @* = expand("%:p")<CR>
+else
+    set clipboard=unnamedplus
+    nmap yp :let @+ = expand("%:p")<CR>
+endif
 
 
 map ё `
