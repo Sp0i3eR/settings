@@ -5,9 +5,9 @@ set autoindent
 set fileencodings=utf-8,cp1251,default
 if has("win32")
     try
-        set guifont=Terminus:h14:cCYRILLIC
+        set guifont=Terminus:h14:cRUSSIAN
     catch
-        set guifont=Courier_New:h11:cCYRILLIC
+        set guifont=Courier_New:h14:cRUSSIAN
     endtry
 else
     try
@@ -84,6 +84,7 @@ else
     nmap yp :let @+ = expand("%:p")<CR>
 endif
 
+syntax on
 
 map ё `
 map й q
