@@ -1,5 +1,6 @@
-call pathogen#runtime_append_all_bundles() 
-
+try
+    call pathogen#runtime_append_all_bundles() 
+endtry
 set autoindent
 set fileencodings=utf-8,cp1251,default
 if has("win32")
@@ -34,21 +35,19 @@ set expandtab
 set shiftwidth=4
 set t_Co=256
 
+syntax on
 
 vmap <c-f> !xmllint --nowarning --format -<CR>
 nmap <c-f> ggVG!xmllint --nowarning --format -<CR>
 imap <c-f> <esc>ggVG!xmllint --nowarning --format -<CR>i
 
-command W w !sudo tee % > /dev/null
 ino <S-Space> <Esc>
-imap <F11> <Esc>:set<Space>nu!<CR>a
-nmap <F11> :set<Space>nu!<CR>
+nmap <c-s> :w<cr>
+vmap <c-s> <esc>:w<cr>i
+imap <c-s> <esc>:w<cr>i
 nmap <F2> :w<cr>
-nmap <S-F2> :W<cr>
 vmap <F2> <esc>:w<cr>i
-vmap <S-F2> <esc>:W<cr>i
 imap <F2> <esc>:w<cr>i
-imap <S-F2> <esc>:W<cr>i
 nmap <c-q> :confirm q<cr>
 vmap <c-q> <esc>:confirm q<cr>i
 imap <c-q> <esc>:confirm q<cr>i
