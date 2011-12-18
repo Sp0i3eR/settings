@@ -54,6 +54,7 @@ imap <c-q> <esc>:confirm q<cr>i
 nmap <F10> :confirm q<cr>
 vmap <F10> <esc>:confirm q<cr>i
 imap <F10> <esc>:confirm q<cr>i
+nmap <c-p> "_ditP
 map <c-z> <c-o>u
 
 nmap <silent> <C-t> :tabnew<CR>
