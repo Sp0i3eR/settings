@@ -1,2 +1,4 @@
 Here be dragons
+Suppose you know what you doing
+git clone --bare git@github.com:Sp0i3eR/settings.git .git && git init && git checkout
 
