@@ -1,0 +1,17 @@
+XXkb.group.base: 1
+XXkb.group.alt: 2
+XXkb.mainwindow.enable: yes
+XXkb.mainwindow.geometry: 22x22+0+0
+XXkb.mainwindow.label.font: -misc-*-r-*-13-*
+
+XXkb.*.border.color: black
+XXkb.*.border.width: 0
+
+XXkb.*.label.foreground: white
+XXkb.mainwindow.label.text.1:   EN
+XXkb.mainwindow.label.text.2:   RU
+XXkb.*.label.background: rgba:1111/1111/1111/4444
+XXkb.*.label.enable:    yes 
+
+XXkb.mainwindow.type:   tray
+XXkb.button.enable: no
