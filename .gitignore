@@ -7,4 +7,6 @@
 !.gitignore
 !.Xresources
 !.fonts.conf
+!.xxkbrc
+!.bashrc
 !.gtkrc-2.0
