@@ -23,6 +23,8 @@ export RSYNC_RSH=ssh
 alias rscp="rsync --partial --progress --rsh=ssh"
 alias mdd='mkdir `date +%F`'
 alias mdt='mkdir `date +%F-%H-%M`'
+alias dotpdf='dot -Tpdf -O'
+alias dotpng='dot -Tpng -O'
 
 alias emerge='sudo emerge'
 alias layman='sudo layman'
