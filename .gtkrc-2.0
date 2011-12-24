@@ -24,3 +24,8 @@ widget "*pidgin_request_imhtml" style "imhtml-fix"
 
 # formatting-capable notification areas in dialogs (again, IMHtml widgets)
 widget "*pidgin_notify_imhtml" style "imhtml-fix"
+
+
+gtk-tooltip-browse-mode-timeout = 0 #default 500
+gtk-tooltip-browse-timeout = 0 #default 60
+gtk-tooltip-timeout = 0 #default 500
