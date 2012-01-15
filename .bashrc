@@ -26,6 +26,6 @@ alias mdt='mkdir `date +%F-%H-%M`'
 alias dotpdf='dot -Tpdf -O'
 alias dotpng='dot -Tpng -O'
 
-alias emerge='sudo emerge'
+alias emerge='sudo emerge -a'
 alias layman='sudo layman'
 alias eselect='sudo eselect'

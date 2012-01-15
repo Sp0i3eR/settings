@@ -3,23 +3,36 @@ try
 endtry
 set autoindent
 set fileencodings=utf-8,cp1251,default
-if has("win32")
+if has("gui_running")
+    if has("win32")
+        try
+            set guifont=Terminus:h14:cRUSSIAN
+        catch
+            set guifont=Courier_New:h14:cRUSSIAN
+        endtry
+    else
+        try
+            set guifont=Terminus\ 14
+        catch
+            set guifont=Monospace\ 14
+        endtry
+    endif
+
+    set guioptions-=T
+    set guioptions-=m
+    set guioptions-=r
+    set t_Co=256
+
     try
-        set guifont=Terminus:h14:cRUSSIAN
+        colorscheme solarized
+        set background=dark
     catch
-        set guifont=Courier_New:h14:cRUSSIAN
+        colorscheme desert
     endtry
 else
-    try
-        set guifont=Terminus\ 14
-    catch
-        set guifont=Monospace\ 14
-    endtry
+    colorscheme desert
 endif
 
-set guioptions-=T
-set guioptions-=m
-set guioptions-=r
 set termencoding=utf-8
 set window=29
 set wildmode=longest,list
@@ -33,7 +46,7 @@ set complete-=i
 set softtabstop=4
 set expandtab
 set shiftwidth=4
-set t_Co=256
+let mapleader=','
 
 syntax on
 
@@ -69,12 +82,6 @@ nmap <c-up> <c-w>W
 nmap <c-left> <c-w>h
 nmap <c-right> <c-w>l
 
-try
-    colorscheme solarized
-    set background=dark
-catch
-    colorscheme desert
-endtry
 
 set number
 if has('win32')
@@ -86,6 +93,7 @@ else
 endif
 
 syntax on
+
 
 map ё `
 map й q
