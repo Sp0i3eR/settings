@@ -83,7 +83,6 @@ imap <c-cr> <esc>:JavaCorrect<cr>i
 " Supertab settings
 let g:SuperTabDefaultCompletionTypeDiscovery = ["&omnifunc:<c-x><c-o>", "&completefunc:<c-x><c-u>"]
 let g:SuperTabLongestHighlight = 1
-imap <c-space> <c-x><c-o>
 
 set number
 if has('win32')

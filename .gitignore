@@ -1,11 +1,15 @@
-**/*
-*
-!.vimrc
-!.bashrc 
-!.vim/
-!.gitignore
-!.Xresources
-!.fonts.conf
-!.xxkbrc
-!.bashrc
-!.gtkrc-2.0
+/*
+!/.gitignore
+!/.gitmodules
+# Vim stuff
+!/.vimrc
+!/.vim
+!/.vim/*
+/.vim/.netrwhist
+# Shell stuff
+!/.bashrc
+# X stuff
+!/.Xresources
+!/.fonts.conf
+!/.xxkbrc
+!/.gtkrc-2.0
