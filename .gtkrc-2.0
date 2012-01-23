@@ -1,6 +1,54 @@
-# This is the style section.  You need this for the examples below.
-# If you are going to copy the example, copy the entire block,
-# including the "{" and "}" lines.
+
+gtk-icon-theme-name = "elementary Dark"
+gtk-theme-name = "elementary"
+gtk-font-name = "Sans 12"
+# Since rev. 378 dark menus are removed from elementary
+#style "murrine-menu-calendar" = "murrine-thin"
+#{
+#	text[INSENSITIVE]			= "#666666"
+#	text[NORMAL]				= "#ffffff"
+#	base[NORMAL]				= "#3B3B3B"
+#	base[ACTIVE]				= "#555753"
+#
+#	engine "murrine"
+#	{
+#		roundness			= 1
+#	}
+#}
+#
+#style "murrine-menu-entry" = "murrine-thin"
+#{
+#
+#	ythickness				= 3
+#
+#	base[NORMAL]				= "#BBBBBB"
+#	base[ACTIVE]				= "#BBBBBB"
+#
+#	engine "murrine"
+#	{
+#		roundness			= 3
+#	}
+#}
+#
+#style "murrine-menu-item" = "murrine-wider-dark"
+#{
+#	engine "murrine"
+#	{
+#		roundness			= 0
+#		lightborderstyle		= 1
+#		contrast			= 1.5
+#	}
+#}
+#
+#widget_class "*<GtkMenu>*"              	style "murrine-thin-dark"
+#widget_class "*<GtkMenuItem>*"          	style "murrine-menu-item"
+#widget_class "*<GtkMenuItem>.*.<GtkCalendar>"	style "murrine-menu-calendar"
+#widget_class "*<GtkMenuItem>.*.<GtkEntry>"	style "murrine-menu-entry"
+#widget_class "*<GtkMenuItem>.*.<GtkScale>" 	style "murrine-scale"
+#widget_class "*<GtkMenuBar>*"           	style "murrine-menubar"
+#widget "*.gtk-combobox-popup-menu.*"   		style "murrine-dark"
+#
+
 style "imhtml-fix"
 {
     font_name = "Monospace 14"

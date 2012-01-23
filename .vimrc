@@ -25,7 +25,7 @@ if has("gui_running")
 
     try
         colorscheme solarized
-        set background=dark
+        set background=light
     catch
         colorscheme desert
     endtry
@@ -48,11 +48,6 @@ set expandtab
 set shiftwidth=4
 let mapleader=','
 
-syntax on
-
-vmap <c-f> !xmllint --nowarning --format -<CR>
-nmap <c-f> ggVG!xmllint --nowarning --format -<CR>
-imap <c-f> <esc>ggVG!xmllint --nowarning --format -<CR>i
 
 ino <S-Space> <Esc>
 nmap <c-s> :w<cr>
@@ -82,6 +77,13 @@ nmap <c-up> <c-w>W
 nmap <c-left> <c-w>h
 nmap <c-right> <c-w>l
 
+nmap <c-cr> :JavaCorrect<cr>
+imap <c-cr> <esc>:JavaCorrect<cr>i
+
+" Supertab settings
+let g:SuperTabDefaultCompletionTypeDiscovery = ["&omnifunc:<c-x><c-o>", "&completefunc:<c-x><c-u>"]
+let g:SuperTabLongestHighlight = 1
+imap <c-space> <c-x><c-o>
 
 set number
 if has('win32')
