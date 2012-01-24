@@ -1,0 +1,9 @@
+# Write your default config options here!
+vo=sdl
+ass=1
+subcp=en
+subfont-text-scale="5"
+subfont-blur="8"
+subfont-outline="8"
+
+
