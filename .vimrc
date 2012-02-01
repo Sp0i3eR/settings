@@ -35,7 +35,8 @@ endif
 
 set termencoding=utf-8
 set window=29
-set wildmode=longest,list
+set wildmenu
+set wildmode=longest:full
 set scrolloff=2
 set showmatch
 set nowrap
