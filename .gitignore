@@ -15,3 +15,9 @@
 !/.gtkrc-2.0
 !/.mplayer
 !/.mplayer/config
+# Torrents
+!/.config
+/.config/*
+!/.config/transmission-daemon
+/.config/transmission-daemon/*
+!/.config/transmission-daemon/settings.json
