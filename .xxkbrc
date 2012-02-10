@@ -15,3 +15,4 @@ XXkb.*.label.enable:    yes
 
 XXkb.mainwindow.type:   tray
 XXkb.button.enable: no
+XXkb.app_list.wm_class_class.ignore: VirtualBox

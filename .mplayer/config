@@ -1,9 +1,10 @@
 # Write your default config options here!
 vo=sdl
+ao=sdl
 ass=1
 subcp=en
 subfont-text-scale="5"
 subfont-blur="8"
 subfont-outline="8"
-
+lavdopts=fast=1:skiploopfilter=all:threads=8
 
