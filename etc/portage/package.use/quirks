@@ -1,0 +1,25 @@
+sys-fs/udev keymap
+app-arch/zip natspec
+app-arch/unzip natspec
+net-im/pidgin gnutls -sasl
+app-emulation/virtualbox-bin -chm -python
+net-misc/wget idn
+gnome-base/gvfs gphoto2
+# required by sci-libs/gdal-1.10.0-r1[armadillo]
+# required by gdal (argument)
+>=sci-libs/armadillo-3.6.2 lapack
+# required by sci-libs/gdal-1.10.0-r1
+# required by gdal (argument)
+>=sys-libs/zlib-1.2.7 minizip
+# required by sci-geosciences/qgis-1.8.0[python]
+# required by qgis (argument)
+>=dev-python/PyQt4-4.10.2-r1000 sql
+dev-java/oracle-jdk-bin source nsplugin
+
+# required by net-fs/cifs-utils-6.1-r1[acl]
+=net-fs/samba-3.6.19 winbind
+# required by sys-devel/clang-3.3-r100
+# required by clang (argument)
+=sys-devel/llvm-3.3-r1 clang
+sys-devel/gdb multitarget
+

@@ -1,0 +1,7 @@
+x11-terms/rxvt-unicode -unicode3 -secondary-wheel perl mousewheel 256-color xft -vanilla blink fading-colors
+gnome-base/gvfs samba
+net-fs/samba -server
+media-sound/deadbeef curl ape flac aac m3u mp3
+dev-qt/qtgui gtkstyle
+app-emulation/emul-linux-x86-qtlibs gtkstyle
+
