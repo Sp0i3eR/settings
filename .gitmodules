@@ -1,18 +1,18 @@
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
+[submodule "home/maximb/.vim/bundle/vim-colors-solarized"]
+	path = home/maximb/.vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule ".vim/bundle/supertab"]
-	path = .vim/bundle/supertab
+[submodule "home/maximb/.vim/bundle/supertab"]
+	path = home/maximb/.vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
+[submodule "home/maximb/.vim/bundle/syntastic"]
+	path = home/maximb/.vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-[submodule ".vim/bundle/tagbar"]
-	path = .vim/bundle/tagbar
+[submodule "home/maximb/.vim/bundle/tagbar"]
+	path = home/maximb/.vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule ".vim/bundle/snipmate"]
-	path = .vim/bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
-[submodule ".undistract"]
-        path = .undistract
+[submodule "home/maximb/.vim/bundle/snipmate"]
+	path = home/maximb/.vim/bundle/snipmate
+	url = git://github.com/msanders/snipmate/.vim.git
+[submodule "home/maximb/.undistract"]
+        path = home/maximb/.undistract
         url = git://github.com/jml/undistract-me.git
