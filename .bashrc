@@ -22,10 +22,14 @@ alias htpasswd='htpasswd -nmb'
 export RSYNC_RSH=ssh
 alias rscp="rsync --partial --progress --rsh=ssh"
 alias mdd='mkdir `date +%F`'
-alias mdt='mkdir `date +%F-%H-%M`'
+alias mdt='cd `date +%F-%H-%M | xargs -I % bash -c "mkdir %;echo %"`'
 alias dotpdf='dot -Tpdf -O'
 alias dotpng='dot -Tpng -O'
+alias screen='screen -RAD'
 
-alias emerge='sudo emerge -a'
-alias layman='sudo layman'
-alias eselect='sudo eselect'
+
+export LONG_RUNNING_COMMAND_TIMEOUT=20
+export LONG_RUNNING_PREEXEC_LOCATION=$HOME/.undistract/preexec.bash
+. .undistract/long-running.bash
+notify_when_long_running_commands_finish_install
+PS1="\n\$(if [[ \$? == 0 ]]; then echo \"\[\033[0;34m\]\"; else echo \"\[\033[0;31m\]\"; fi)\342\226\210\342\226\210 [ \W ] [ \t ]\n\[\033[0m\]\342\226\210\342\226\210 "

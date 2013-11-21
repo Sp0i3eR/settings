@@ -12,8 +12,6 @@ if has("gui_running")
         endtry
     else
         try
-            set guifont=Terminus\ 14
-        catch
             set guifont=Monospace\ 14
         endtry
     endif
@@ -63,7 +61,8 @@ imap <c-q> <esc>:confirm q<cr>i
 nmap <F10> :confirm q<cr>
 vmap <F10> <esc>:confirm q<cr>i
 imap <F10> <esc>:confirm q<cr>i
-nmap <c-p> "_ditP
+nmap <leader>tp "_ditP
+nmap <leader>'p "_di"P
 map <c-z> <c-o>u
 
 nmap <silent> <C-t> :tabnew<CR>
@@ -163,3 +162,8 @@ map Т N
 map Ь M
 map Б <
 map Ю >
+function Inc(...)
+  let result = g:i
+  let g:i += a:0 > 0 ? a:1 : 1
+  return result
+endfunction
